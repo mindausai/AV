@@ -52,7 +52,7 @@ figure(2)
 imagesc(image1(:,:,2));
 colormap(gray)
 
-for i = 2:2
+for i = 1:3
        [channel,num] = bwlabel(image1(:,:,i),4);
        num;
        stats = regionprops(channel, 'Area','PixelIdxList');
@@ -63,6 +63,8 @@ for i = 2:2
        end
 
        maxArea = max(list);
+       
+       
        
        for reg = 1:length(stats)
             if stats(reg).Area < maxArea
