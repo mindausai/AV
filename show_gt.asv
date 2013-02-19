@@ -4,7 +4,7 @@ files = dir('images/0*.jpg');
 
 figure(1);
 for ii = 1:size(files,1)
-    Image = imread(strcat('images/',files(ii).name));
+    Image = imread(files(ii).name);
     imshow(Image);
     hold on;
     plot(gt1(3,ii),gt1(2,ii),'r.');
