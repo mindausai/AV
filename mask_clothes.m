@@ -1,6 +1,6 @@
 function m = mask_clothes(image)
     m = image;
-    thresh = 50;
+    thresh = 30;
     mask = im2bw(uint8(image), thresh/255);
 
     m(:,:,1) = m(:,:,1).*mask;
