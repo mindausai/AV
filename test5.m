@@ -1,9 +1,6 @@
 bg = double(imread('background.jpg'));
 average = double(imread('average.jpg'));
 
-
-files = dir('images/0*.jpg');
-
 vals = get_training_data();
 valshsv = rgb2hsv(rgb2nrgb(vals));
 
@@ -21,8 +18,11 @@ for ii = 1:size(files,1)
     
     for ball = 1:3
         out2 = out;
-        lower = min(valshsv(:,ball));
-        upper = max(valshsv(:,ball));
+        sd = std(valshsv(:,ball));
+        m = median(valshsv(:,ball));
+
+        lower = m-sd*2;
+        upper = m+sd*2;
 
         out2(out2 < lower| out2 > upper) = 0;
         out2(out2 >= lower & out2 <= upper) = 1.0;
