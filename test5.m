@@ -1,6 +1,8 @@
 bg = double(imread('background.jpg'));
 average = double(imread('average.jpg'));
 
+files = dir('images/0*.jpg');
+
 vals = get_training_data();
 valshsv = rgb2hsv(rgb2nrgb(vals));
 
@@ -45,9 +47,15 @@ for ii = 1:size(files,1)
             else
                 areaMean = mean(stats(reg).PixelIdxList);
                 channel(stats(reg).PixelIdxList(1));
-                x = mean(stats(reg).PixelList(:,1));
-                y = mean(stats(reg).PixelList(:,2));
-                column = [column y x];
+                x = stats(reg).PixelList(:,1);
+                y = stats(reg).PixelList(:,2);
+                
+                centreX = mean(x);
+                centreY = mean(y);
+                %centreX = mean([max(x),min(x)]);
+                %centreY = mean([max(y),min(y)]);
+                
+                column = [column centreY centreX];
     %            figure(11)
     %            imshow(uint8(im))
     %            hold on

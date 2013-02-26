@@ -11,6 +11,7 @@ for ii = 1:size(files,1)
     plot(matrix(5,ii),matrix(4,ii),'g.');
     plot(matrix(7,ii),matrix(6,ii),'y.');
     drawnow;
+    ii
     pause(1)
 end
 
