@@ -1,16 +1,16 @@
 %
-%  outline latex source document for AILP assignment 1.
+%  outline latex source document for AV assignment 1.
 %  use pdflatex to format this.
 %
-\documentclass[10pt,a4paper,twocolumn]{article}
+\documentclass[10pt,a4paper,oneclumn]{article}
 \usepackage{amssymb,amsmath}            % if some maths is needed
 \usepackage{graphicx}                   % if any images are to be included
 % pick a different font if desired
 \usepackage{times}
 
-\title{AILP (2011) Assignment 1 Report}  % AILP: please use this title.
-\author{The author}                      % replace with name or exam number
-\date{10th Octover 2011}                 % replace with actual date
+\title{Advanced Vision Assignment 2 Report}  % AILP: please use this title.
+\author{Mindaugas Dabulskis, Marat Subkhankulov}                      % replace with name or exam number
+\date{26th February 2013}                 % replace with actual date
 
 \begin{document}
 
@@ -18,39 +18,48 @@
 %
 \section{Introduction}
 
-This report describes the work done for the first assignment in the AILP
-course.  It gives the aims and hypothesis that guided the work;
-describes the algorithms that were implemented;  reports the results
-of experiments that were run;  and analyses these results.
+This report describes the work done for the second assignment of the AV course.
+The aim of the assignment was to track three coloured balls through a set of video frames.
+The algorithm for ball detection and segmentation is discussed. 
+The performance of the approach is evaluated using a gold standard.
 
-\section{Aims and hypothesis}
+\section{Algorithm and implementation}
 
-The aim of the assignment is to pre-process the images for
+In order to segment out the balls from the subject image (the current frame being considered), we removed background regions, and thresholded using values obtained from training data.
 
-The working hypothesis is as follows:
-\begin{quote}
-  The inclusion of some pre-processing steps in the character recognition
-  process will improve the performance of the system.
-\end{quote}1
-
-
-\section{Algorithms and implementation}
-
-For this purpose the following pre-processing algorithms were implemented:
+The following regions had to be removed from the image: 
 \begin{enumerate}
-\item Position normalisation;
-\item Slant normalisation;
-\item Scaling normalisation (bilinear interpolation);
-\item Normalizing imiges using therhold.
+\item Static background
+\item Juggler's clothing
+\item Juggler's hands
+\item Juggler's face
+\item Shadow caused by the juggler on the door
 \end{enumerate}
 
-\subsection{Position normalisation}
+To remove the above regions the following techniques were applied:
+\begin{enumerate}
+\item Average background subtraction
+\item NRGB colourspace
+\item HSV colourspace
+\item Training samples based on ground truth
+\end{enumerate}
 
-The basic idea for position normlisation was to move digits centriod to a diffrent location, the center of image. To do that, I needed to calculate digits centroid using three formulas:
-\begin{equation}
-x_c=\frac{1}{S} \sum_{y=1}^H
-\label{eq1}
-\end{equation}
+\begin{center}
+  \includegraphics[width=6cm]{figures/original.png}
+\end{center}
+
+\subsection{Static background}
+
+A picture of the empty room had been given, however when subtraction of the background from the subject image did not eliminate the shadow of the door, which had similar values to the yellow ball even in normalized RGB. Thus we obtained a mean of all the frames and used the resulting image as the background; By converting the subject and the new background images to N-RGB, subtracting and thresholding out the low brightness regions we obtained a mask which eliminated:
+\begin{enumerate}
+\item Static background
+\item Shadow on the door
+\item Juggler's face
+\end{enumerate}
+
+\begin{center}
+  \includegraphics[width=6cm]{figures/avnrgbdifhsvmask.png}
+\end{center}
 
 \subsection{Slant normalisation}
 
@@ -157,9 +166,6 @@ it is straightforward to see that
 
 And here is an included image (png and pdf formats are allowed).
 
-\begin{center}
-  \includegraphics[width=6cm]{figseven.png}
-\end{center}
 \subsection{References}
 
 References should be numbered in order of appearance, 
