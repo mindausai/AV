@@ -1,5 +1,6 @@
-image11 = double(imread('images/00000070.jpg','jpg'));
-bg = double(imread('background.jpg','jpg'));
+image11 = double(imread('images/00000069.jpg','jpg'));
+bg1 = double(imread('background.jpg','jpg'));
+bg = bg1;
 image1 = image11;
 image1 = mask_clothes(image1);
 
@@ -83,3 +84,16 @@ end
 figure(3)
 imagesc(image1(:,:,2))
 colormap(gray)
+
+image11 = mask_clothes(image11);
+hsvImage = rgb2hsv(image11);
+hsvBg = rgb2hsv(bg1);
+treshImage = hsvImage - hsvBg;
+
+figure(20)
+imagesc(hsvImage(:,:,3))
+
+treshImage = treshImage(:,:,3) > 0.5;
+
+figure(19)
+imagesc(treshImage)
