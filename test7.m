@@ -15,6 +15,25 @@ for i = 1:size(matrix,2)
     errorY = [errorY yellow];
 end
 
-hist(errorR)
-max(errorG);
-errorY;
+figure(1)
+hist(errorR);
+errorCountR = sum(errorR > 10)
+maxErrorR = max(errorR)
+minErrorR = min(errorR)
+sumErrorR = sum(errorR)
+
+figure(2)
+hist(errorG);
+errorCountG = sum(errorG > 10)
+maxErrorG = max(errorG)
+minErrorG = min(errorG)
+sumErrorG = sum(errorG)
+
+figure(3)
+hist(errorY);
+errorCountY = sum(errorY > 10)
+maxErrorY = max(errorY)
+minErrorY = min(errorY)
+sumErrorY = sum(errorY)
+
+totalError = sum([sumErrorR,sumErrorG,sumErrorY])

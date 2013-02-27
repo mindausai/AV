@@ -1,0 +1,63 @@
+errorCountR =
+
+     0
+
+
+maxErrorR =
+
+    8.0093
+
+
+minErrorR =
+
+    0.2799
+
+
+sumErrorR =
+
+  224.0428
+
+
+errorCountG =
+
+     0
+
+
+maxErrorG =
+
+    6.5060
+
+
+minErrorG =
+
+    0.5622
+
+
+sumErrorG =
+
+  276.9718
+
+
+errorCountY =
+
+     2
+
+
+maxErrorY =
+
+   11.9423
+
+
+minErrorY =
+
+    0.5995
+
+
+sumErrorY =
+
+  328.6480
+
+
+totalError =
+
+  829.6625

@@ -6,7 +6,6 @@ files = dir('images/0*.jpg');
 vals = get_training_data();
 valshsv = rgb2hsv(rgb2nrgb(vals));
 
-figure(1);
 count = 1;
 
 matrix = [];
@@ -50,18 +49,12 @@ for ii = 1:size(files,1)
                 x = stats(reg).PixelList(:,1);
                 y = stats(reg).PixelList(:,2);
                 
-                centreX = mean(x);
-                centreY = mean(y);
-                %centreX = mean([max(x),min(x)]);
-                %centreY = mean([max(y),min(y)]);
+                %centreX = mean(x);
+                %centreY = mean(y);
+                centreX = mean([max(x),min(x)]);
+                centreY = mean([max(y),min(y)]);
                 
                 column = [column centreY centreX];
-    %            figure(11)
-    %            imshow(uint8(im))
-    %            hold on
-    %            plot(x,y,'ro')
-    %            drawnow;
-    %            pause(1)
             end
         end
     end
