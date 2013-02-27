@@ -17,6 +17,8 @@ for ii = 1:size(files,1)
     im = double(imread(files(ii).name));
     out = detect1(im,bg,average);
     
+    tmpChann = zeros(480,640);
+    
     for ball = 1:3
         out2 = out;
         sd = std(valshsv(:,ball));
@@ -44,8 +46,6 @@ for ii = 1:size(files,1)
             if stats(reg).Area < maxArea
                 channel(stats(reg).PixelIdxList) = 0;
             else
-                areaMean = mean(stats(reg).PixelIdxList);
-                channel(stats(reg).PixelIdxList(1));
                 x = stats(reg).PixelList(:,1);
                 y = stats(reg).PixelList(:,2);
                 
@@ -61,7 +61,10 @@ for ii = 1:size(files,1)
                 column = [column centreY centreX];
             end
         end
+        tmpChann = tmpChann + channel;
     end
+    figure(1)
+    imshow(tmpChann)
     ii
     matrix = [matrix, column'];
 end

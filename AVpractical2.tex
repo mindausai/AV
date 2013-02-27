@@ -1,0 +1,72 @@
+%
+%  outline latex source document for AV assignment 1.
+%  use pdflatex to format this.
+%
+\documentclass[10pt,a4paper,oneclumn]{article}
+\usepackage{amssymb,amsmath}            % if some maths is needed
+\usepackage{graphicx}                   % if any images are to be included
+% pick a different font if desired
+\usepackage{times}
+
+\title{Advanced Vision Assignment 2 Report}  % AILP: please use this title.
+\author{Mindaugas Dabulskis, Marat Subkhankulov}                      % replace with name or exam number
+\date{26th February 2013}                 % replace with actual date
+
+\begin{document}
+
+\maketitle  % insert title, author info
+%
+
+\section{Final Touch}
+
+Final clean up and ball identification was made using matlab bwlabel and regionprops functions. The function bwlabel takes our intermediat file, which we got after appling all the masks, and labels all the connected objects in the file. Later, this file is supplied to regionprops function, which mesuers and returns set of the properties for each connected object in the file. We only needed 'Area' , 'PixelIdxList' and 'PixelList' properties. These options gave us these properties of the region:
+\begin{enumerate}
+\item 'Area' - number of actual pixels in the region,
+\item 'PixelIdxList' - vector containing the linear indices of the pixels in region,
+\item 'PixelList' - matrix specifying the locations of pixels in the region.
+\end{enumerate}
+
+The idea was: 
+\begin{enumerate}
+\item to find maximum connected object in the file by the pixels area, 
+\item set all other connected object areas pixel to 0 (delete these areas), 
+\item find the middle point of the largest connected objects area. 
+\end{enumerate}
+
+Second point cleaned the image of all the noise, because the object with biggest area was the ball itself. Third point was needed for evaluation, to evaluate how much our detected ball differs from ground truth. We had four diffrent approches how to calculate the mass of the ball:
+
+\begin{enumerate}
+\item Use the mean of the area pixels,
+\item use the median of the area pixels,
+\item use the maximum and minimum pixels in y and x coordinates and find the mean between them. It sort of creates a bounding box of the area and finds it centre.
+\item use first and third aproch and find the mean between those two found centres.
+\end{enumerate}
+
+The evaluation of these aprroches are reported in the section below. We decided to use just normal mean, but left an option to change if needed and found that other aproches with diffrent data sets works better. We stored all found centres in the matrix. The format of that matrex is excatly the same as the format for the ground truth. In next stage we just plot the found mass centres on each image with the centre from ground truth and draw the trajectory at the end by connecting all the points.
+
+\section{Experiments and results}
+
+
+
+\subsection{References}
+
+References should be numbered in order of appearance, 
+for example \cite{ES1}, \cite{ES2}, and \cite{ES3}. 
+You \emph{can} use \texttt{bibtex} to prepare references,
+or do it by hand if there are very few.
+
+%
+\bibliographystyle{IEEEtran}
+\begin{thebibliography}{10}
+\bibitem[1]{ES1} Smith, J. O. and Abel, J. S., 
+``Bark and {ERB} Bilinear Transforms'', 
+IEEE Trans. Speech and Audio Proc., 7(6):697--708, 1999.  
+\bibitem[2]{ES2} Lee, K.-F., Automatic Speech Recognition: 
+The Development of the 
+SPHINX SYSTEM, Kluwer Academic Publishers, Boston, 1989.
+\bibitem[3]{ES3} Rudnicky, A. I., Polifroni, Thayer, E. H.,
+ and Brennan, R. A.  
+"Interactive problem solving with speech", J. Acoust. Soc. Amer., 
+Vol. 84, 1988, p S213(A).
+\end{thebibliography}
+\end{document}
