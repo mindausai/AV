@@ -18,7 +18,7 @@
 %
 \section{Introduction}
 
-This report describes the work done for the second assignment of the AV course.
+This report describes the work carried out for the second assignment of the AV course.
 The aim of the assignment was to track three coloured balls through a set of video frames.
 The algorithm for ball detection and segmentation is discussed. 
 The performance of the approach is evaluated using a gold standard.
@@ -37,18 +37,22 @@ The following regions had to be removed from the image:
 \end{enumerate}
 
 To remove the above regions the following techniques were applied:
+
 \begin{enumerate}
-\item Average background subtraction
-\item NRGB colourspace
-\item HSV colourspace
-\item Training samples based on ground truth
+\item Mask 1: Average background subtraction
+\item Mask 2: Clothing mask based on intensity
+\item Mask 3: Hand skin mask based on saturation
+\item Classification based on a training sample
 \end{enumerate}
 
-\begin{center}
+\begin{figure}
+\centering
+  \includegraphics[width=6cm]{figures/imnrgb.png}
   \includegraphics[width=6cm]{figures/original.png}
-\end{center}
+\caption{Training sample for each ball}
+\end{figure}
 
-\subsection{Static background}
+\subsection{Mask 1: Average background}
 
 A picture of the empty room had been given, however when subtraction of the background from the subject image did not eliminate the shadow of the door, which had similar values to the yellow ball even in normalized RGB. Thus we obtained a mean of all the frames and used the resulting image as the background; By converting the subject and the new background images to N-RGB, subtracting and thresholding out the low brightness regions we obtained a mask which eliminated:
 \begin{enumerate}
@@ -57,15 +61,58 @@ A picture of the empty room had been given, however when subtraction of the back
 \item Juggler's face
 \end{enumerate}
 
-\begin{center}
-  \includegraphics[width=6cm]{figures/avnrgbdifhsvmask.png}
-\end{center}
+\begin{figure}
+\centering
+  \includegraphics[width=3cm]{figures/av.png}
+  \includegraphics[width=3cm]{figures/avnrgb.png}
+  \includegraphics[width=3cm]{figures/avnrgbdif.png}
+  \includegraphics[width=3cm]{figures/avnrgbhsvvalue.png}
+  \includegraphics[width=3cm]{figures/avnrgbdifhsvmask.png}
+\caption{Training sample for each ball}
+\end{figure}
 
-\subsection{Slant normalisation}
+\subsection{Mask 2: Clothing mask}
 
-Another algorithm.
+Mask 1 did not remove the clothing of the juggler due to the smoothing effect of averaging; This posed a problem as the clothes had similar chromaticity to the green ball. We took advantage of the clothes' dark colour to easily theshold out the clothing using a manual threshold.
 
-\section{Experiments and results}
+\begin{figure}
+\centering
+  \includegraphics[width=3cm]{figures/imnrgb.png}
+  \includegraphics[width=3cm]{figures/clothes_mask.png}
+\caption{Training sample for each ball}
+\end{figure}
+
+\subsection{Mask 3: Hands}
+It seemed reasonable to use N-RGB for segmenting out the balls as the lighting effects were lare largely removed, however the hands of the juggler were not removed by the previous masks and had similar chromaticity to the red ball. We removed the hands by taking advantage of the skin's unique saturation value.
+
+\begin{figure}
+\centering
+  \includegraphics[width=6cm]{figures/imsat.png}
+  \includegraphics[width=6cm]{figures/imhsvsatmask.png}
+\caption{Training sample for each ball}
+\end{figure}
+
+\subsection{Segmentation}
+
+Having applied all of the masks the background was largely removed. Thresholding could now be performed. Conversion to N-RGB eliminated diffuse and specular lighting effects on the balls, but necessitated thresholding on all three channels; Since the intensity of all the pixels was largely the same after normalization, it was clear that the majority of variation lies in the hue of the spheres - using this single value simplified thresholding as only one channel could be used to successfully classify the ball pixels. 
+
+\begin{figure}
+\centering
+  \includegraphics[width=6cm]{figures/bgremoved.png}
+\caption{Training sample for each ball}
+\end{figure}
+
+Threshold values for hue were obtained from a training sample. The training sample obtained by sampling the pixel as the centroid of each ball given by the ground truth. The lower and upper thresholds were 2 standard deviations from the median of the sample - this was done to ignore outliers.
+
+\begin{figure}
+\centering
+  \includegraphics[width=6cm]{figures/training.png}
+  \includegraphics[width=6cm]{figures/class1.png}
+  \includegraphics[width=6cm]{figures/class2.png}
+  \includegraphics[width=6cm]{figures/class3.png}
+\caption{Training sample for each ball}
+\end{figure}
+
 
 \section{Discussion and Conclusion}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.26)  26 FEB 2013 21:20
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.26)  27 FEB 2013 16:41
 entering extended mode
 **C:/Users/Marat/Documents/GitHub/AV/AVpractical1.tex
 (C:/Users/Marat/Documents/GitHub/AV/AVpractical1.tex
@@ -182,40 +182,139 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
 
-<figures/original.png, id=1, 482.55281pt x 361.35pt>
+<figures/imnrgb.png, id=1, 482.55281pt x 361.35pt>
+File: figures/imnrgb.png Graphic file (type png)
+ <use figures/imnrgb.png>
+Package pdftex.def Info: figures/imnrgb.png used on input line 50.
+(pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
+
+<figures/original.png, id=2, 482.55281pt x 361.35pt>
 File: figures/original.png Graphic file (type png)
 
 <use figures/original.png>
-Package pdftex.def Info: figures/original.png used on input line 48.
+Package pdftex.def Info: figures/original.png used on input line 51.
 (pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
- <figures/avnrgbdifhsvmask.png, id=8, 482.55281pt x 361.35pt>
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] <figures/av.png, id=9, 48
+2.55281pt x 361.35pt>
+File: figures/av.png Graphic file (type png)
+ <use figures/av.png>
+Package pdftex.def Info: figures/av.png used on input line 66.
+(pdftex.def)             Requested size: 85.35826pt x 63.91539pt.
+
+<figures/avnrgb.png, id=10, 482.55281pt x 361.35pt>
+File: figures/avnrgb.png Graphic file (type png)
+ <use figures/avnrgb.png>
+Package pdftex.def Info: figures/avnrgb.png used on input line 67.
+(pdftex.def)             Requested size: 85.35826pt x 63.91539pt.
+
+<figures/avnrgbdif.png, id=11, 482.55281pt x 361.35pt>
+File: figures/avnrgbdif.png Graphic file (type png)
+
+<use figures/avnrgbdif.png>
+Package pdftex.def Info: figures/avnrgbdif.png used on input line 68.
+(pdftex.def)             Requested size: 85.35826pt x 63.91539pt.
+
+<figures/avnrgbhsvvalue.png, id=12, 482.55281pt x 361.35pt>
+File: figures/avnrgbhsvvalue.png Graphic file (type png)
+
+<use figures/avnrgbhsvvalue.png>
+Package pdftex.def Info: figures/avnrgbhsvvalue.png used on input line 69.
+(pdftex.def)             Requested size: 85.35826pt x 63.91539pt.
+
+<figures/avnrgbdifhsvmask.png, id=13, 482.55281pt x 361.35pt>
 File: figures/avnrgbdifhsvmask.png Graphic file (type png)
 
 <use figures/avnrgbdifhsvmask.png>
-Package pdftex.def Info: figures/avnrgbdifhsvmask.png used on input line 62.
+Package pdftex.def Info: figures/avnrgbdifhsvmask.png used on input line 70.
+(pdftex.def)             Requested size: 85.35826pt x 63.91539pt.
+File: figures/imnrgb.png Graphic file (type png)
+ <use figures/imnrgb.png>
+Package pdftex.def Info: figures/imnrgb.png used on input line 80.
+(pdftex.def)             Requested size: 85.35826pt x 63.91539pt.
+
+<figures/clothes_mask.png, id=14, 482.55281pt x 361.35pt>
+File: figures/clothes_mask.png Graphic file (type png)
+
+<use figures/clothes_mask.png>
+Package pdftex.def Info: figures/clothes_mask.png used on input line 81.
+(pdftex.def)             Requested size: 85.35826pt x 63.91539pt.
+ [2 <C:/Users/Marat/Documents/GitHub/AV/figures/imnrgb.png (PNG copy)> <C:/User
+s/Marat/Documents/GitHub/AV/figures/original.png (PNG copy)> <C:/Users/Marat/Do
+cuments/GitHub/AV/figures/av.png (PNG copy)> <C:/Users/Marat/Documents/GitHub/A
+V/figures/avnrgb.png (PNG copy)> <C:/Users/Marat/Documents/GitHub/AV/figures/av
+nrgbdif.png (PNG copy)> <C:/Users/Marat/Documents/GitHub/AV/figures/avnrgbhsvva
+lue.png (PNG copy)> <C:/Users/Marat/Documents/GitHub/AV/figures/avnrgbdifhsvmas
+k.png (PNG copy)>]
+<figures/imsat.png, id=18, 482.55281pt x 361.35pt>
+File: figures/imsat.png Graphic file (type png)
+ <use figures/imsat.png>
+Package pdftex.def Info: figures/imsat.png used on input line 90.
 (pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
- [2 <C:/Users/Marat/Documents/GitHub/AV/figures/original.png (PNG copy)> <C:/Us
-ers/Marat/Documents/GitHub/AV/figures/avnrgbdifhsvmask.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 102.
+
+<figures/imhsvsatmask.png, id=19, 482.55281pt x 361.35pt>
+File: figures/imhsvsatmask.png Graphic file (type png)
+
+<use figures/imhsvsatmask.png>
+Package pdftex.def Info: figures/imhsvsatmask.png used on input line 91.
+(pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
+
+<figures/bgremoved.png, id=20, 482.55281pt x 361.35pt>
+File: figures/bgremoved.png Graphic file (type png)
+
+<use figures/bgremoved.png>
+Package pdftex.def Info: figures/bgremoved.png used on input line 101.
+(pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
+
+<figures/training.png, id=21, 351.56343pt x 259.7203pt>
+File: figures/training.png Graphic file (type png)
+
+<use figures/training.png>
+Package pdftex.def Info: figures/training.png used on input line 109.
+(pdftex.def)             Requested size: 170.71652pt x 126.11478pt.
+ <figures/class1.png, id=22, 482.55281pt x 361.35pt>
+File: figures/class1.png Graphic file (type png)
+
+<use figures/class1.png>
+Package pdftex.def Info: figures/class1.png used on input line 110.
+(pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
+ <figures/class2.png, id=23, 482.55281pt x 361.35pt>
+File: figures/class2.png Graphic file (type png)
+
+<use figures/class2.png>
+Package pdftex.def Info: figures/class2.png used on input line 111.
+(pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
+ <figures/class3.png, id=24, 482.55281pt x 361.35pt>
+File: figures/class3.png Graphic file (type png)
+
+<use figures/class3.png>
+Package pdftex.def Info: figures/class3.png used on input line 112.
+(pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
+ [3 <C:/Users/Marat/Documents/GitHub/AV/figures/clothes_mask.png (PNG copy)> <C
+:/Users/Marat/Documents/GitHub/AV/figures/imsat.png (PNG copy)> <C:/Users/Marat
+/Documents/GitHub/AV/figures/imhsvsatmask.png (PNG copy)>] [4 <C:/Users/Marat/D
+ocuments/GitHub/AV/figures/bgremoved.png (PNG copy)> <C:/Users/Marat/Documents/
+GitHub/AV/figures/training.png> <C:/Users/Marat/Documents/GitHub/AV/figures/cla
+ss1.png (PNG copy)> <C:/Users/Marat/Documents/GitHub/AV/figures/class2.png (PNG
+ copy)> <C:/Users/Marat/Documents/GitHub/AV/figures/class3.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 148.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [3] [4]
+) [5] [6]
 (C:\Users\Marat\Documents\GitHub\AV\AVpractical1.aux) ) 
 Here is how much of TeX's memory you used:
- 2127 strings out of 493921
- 26581 string characters out of 3144876
+ 2192 strings out of 493921
+ 28009 string characters out of 3144876
  84109 words of memory out of 3000000
- 5403 multiletter control sequences out of 15000+200000
+ 5455 multiletter control sequences out of 15000+200000
  22741 words of font info for 61 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,8n,24p,527b,261s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,8n,24p,577b,261s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/
 MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
@@ -228,9 +327,9 @@ c/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/cour
 ier/ucrr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.
 pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on AVpractical1.pdf (4 pages, 503647 bytes).
+Output written on AVpractical1.pdf (6 pages, 1788102 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 82 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
