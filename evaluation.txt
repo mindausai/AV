@@ -1,0 +1,270 @@
+errorCountR =
+
+     0
+
+
+maxErrorR =
+
+    8.0093
+
+
+minErrorR =
+
+    0.2799
+
+
+sumErrorR =
+
+  224.0428
+
+
+errorCountG =
+
+     0
+
+
+maxErrorG =
+
+    6.5060
+
+
+minErrorG =
+
+    0.5622
+
+
+sumErrorG =
+
+  276.9718
+
+
+errorCountY =
+
+     2
+
+
+maxErrorY =
+
+   11.9423
+
+
+minErrorY =
+
+    0.5995
+
+
+sumErrorY =
+
+  328.6480
+
+
+totalError =
+
+  829.6625
+
+
+
+
+
+errorCountR =
+
+     0
+
+
+maxErrorR =
+
+    9.1241
+
+
+minErrorR =
+
+    0.5000
+
+
+sumErrorR =
+
+  264.7848
+
+
+errorCountG =
+
+     0
+
+
+maxErrorG =
+
+    5.5902
+
+
+minErrorG =
+
+     0
+
+
+sumErrorG =
+
+  189.4427
+
+
+errorCountY =
+
+     1
+
+
+maxErrorY =
+
+   11.6297
+
+
+minErrorY =
+
+    0.5000
+
+
+sumErrorY =
+
+  258.1291
+
+
+totalError =
+
+  712.3566
+
+
+
+
+errorCountR =
+
+     0
+
+
+maxErrorR =
+
+    7.2649
+
+
+minErrorR =
+
+    0.0464
+
+
+sumErrorR =
+
+  228.7132
+
+
+errorCountG =
+
+     0
+
+
+maxErrorG =
+
+    6.0348
+
+
+minErrorG =
+
+    0.5397
+
+
+sumErrorG =
+
+  223.2963
+
+
+errorCountY =
+
+     2
+
+
+maxErrorY =
+
+   11.7860
+
+
+minErrorY =
+
+    0.5415
+
+
+sumErrorY =
+
+  289.6062
+
+
+totalError =
+
+  741.6157
+
+
+
+
+
+errorCountR =
+
+     0
+
+
+maxErrorR =
+
+    8.0623
+
+
+minErrorR =
+
+     0
+
+
+sumErrorR =
+
+  227.6602
+
+
+errorCountG =
+
+     0
+
+
+maxErrorG =
+
+    7.5000
+
+
+minErrorG =
+
+     0
+
+
+sumErrorG =
+
+  298.2528
+
+
+errorCountY =
+
+     2
+
+
+maxErrorY =
+
+   11.7047
+
+
+minErrorY =
+
+     0
+
+
+sumErrorY =
+
+  363.9370
+
+
+totalError =
+
+  889.8500
+
+
+
+
