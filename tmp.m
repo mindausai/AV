@@ -6,20 +6,21 @@ files = dir('images/0*.jpg');
 vals = get_training_data();
 valshsv = rgb2hsv(rgb2nrgb(vals));
 
+figure(1);
 count = 1;
 
 matrix = [];
-
+%{
 for ii = 1:size(files,1)
-    
+  %}
+    ii = 45;
     column = ii;
     
     im = double(imread(files(ii).name));
     out = detect1(im,bg,average);
     
-    tmpChann = zeros(480,640);
-    
-    for ball = 1:3
+    %for ball = 1:3
+        ball = 2;
         out2 = out;
         sd = std(valshsv(:,ball));
         m = median(valshsv(:,ball));
@@ -46,27 +47,30 @@ for ii = 1:size(files,1)
             if stats(reg).Area < maxArea
                 channel(stats(reg).PixelIdxList) = 0;
             else
+                areaMean = mean(stats(reg).PixelIdxList);
+                channel(stats(reg).PixelIdxList(1));
                 x = stats(reg).PixelList(:,1);
                 y = stats(reg).PixelList(:,2);
                 
-                %centreX1 = mean(x);
-                %centreY1 = mean(y);
-                %centreX2 = mean([max(x),min(x)]);
-                %centreY2 = mean([max(y),min(y)]);
-                %centreX = mean([centreX1,centreX2]);
-                %centreY = mean([centreY1,centreY2]);
-                centreX = median(x);
-                centreY = median(y);
+                centreX = mean(x);
+                centreY = mean(y);
+                %centreX = mean([max(x),min(x)]);
+                %centreY = mean([max(y),min(y)]);
                 
                 column = [column centreY centreX];
+    %            figure(11)
+    %            imshow(uint8(im))
+    %            hold on
+    %            plot(x,y,'ro')
+    %            drawnow;
+    %            pause(1)
             end
         end
-        tmpChann = tmpChann + channel;
+    %{
     end
-    figure(1)
-    imshow(tmpChann)
     ii
     matrix = [matrix, column'];
 end
 
 save('matrix.mat','matrix');
+%}
