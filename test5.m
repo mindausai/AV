@@ -49,10 +49,14 @@ for ii = 1:size(files,1)
                 x = stats(reg).PixelList(:,1);
                 y = stats(reg).PixelList(:,2);
                 
-                %centreX = mean(x);
-                %centreY = mean(y);
-                centreX = mean([max(x),min(x)]);
-                centreY = mean([max(y),min(y)]);
+                %centreX1 = mean(x);
+                %centreY1 = mean(y);
+                %centreX2 = mean([max(x),min(x)]);
+                %centreY2 = mean([max(y),min(y)]);
+                %centreX = mean([centreX1,centreX2]);
+                %centreY = mean([centreY1,centreY2]);
+                centreX = median(x);
+                centreY = median(y);
                 
                 column = [column centreY centreX];
             end

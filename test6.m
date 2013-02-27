@@ -1,7 +1,7 @@
 load matrix;
 
 files = dir('images/0*.jpg');
-
+%{
 figure(1);
 for ii = 1:size(files,1)
     Image = imread(files(ii).name);
@@ -14,7 +14,7 @@ for ii = 1:size(files,1)
     ii
     pause(1)
 end
-
+%}
 bg = imread('background.jpg');
 
 figure(2); 
