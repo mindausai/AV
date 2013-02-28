@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2012.9.11)  27 FEB 2013 16:43
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.1.3)  28 FEB 2013 02:39
 entering extended mode
  %&-line parsing enabled.
 **AVpractical2.tex
@@ -129,7 +129,14 @@ Package: times 2005/04/12 PSNFSS-v9.2a (SPQR)
 LaTeX Warning: Unused global option(s):
     [oneclumn].
 
-(./AVpractical2.aux)
+(./AVpractical2.aux
+
+LaTeX Warning: Label `table1' multiply defined.
+
+
+LaTeX Warning: Label `table1' multiply defined.
+
+)
 \openout1 = `AVpractical2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
@@ -171,31 +178,115 @@ File: umsb.fd 2002/01/19 v2.2g AMS font definitions
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+
+<cleanedYell.jpg, id=1, 786.94pt x 556.0775pt>
+File: cleanedYell.jpg Graphic file (type jpg)
+ <use cleanedYell.jpg>
+<cleanGreen.jpg, id=2, 786.94pt x 556.0775pt>
+File: cleanGreen.jpg Graphic file (type jpg)
+ <use cleanGreen.jpg>
+<cleanRed.jpg, id=3, 786.94pt x 556.0775pt>
+File: cleanRed.jpg Graphic file (type jpg)
+ <use cleanRed.jpg>
+<cleanAll.jpg, id=4, 786.94pt x 556.0775pt>
+File: cleanAll.jpg Graphic file (type jpg)
+ <use cleanAll.jpg>
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./cleanedYell.jpg> <./clea
+nGreen.jpg> <./cleanRed.jpg> <./cleanAll.jpg>]
+<errorCroped.jpg, id=12, 87.32625pt x 74.2775pt>
+File: errorCroped.jpg Graphic file (type jpg)
+ <use errorCroped.jpg>
+<redHist.jpg, id=13, 562.1pt x 421.575pt>
+File: redHist.jpg Graphic file (type jpg)
+ <use redHist.jpg>
+<greenHist.jpg, id=14, 562.1pt x 421.575pt>
+File: greenHist.jpg Graphic file (type jpg)
+ <use greenHist.jpg>
+<yellowHist.jpg, id=15, 562.1pt x 421.575pt>
+File: yellowHist.jpg Graphic file (type jpg)
+ <use yellowHist.jpg>
+<redHistBound.jpg, id=16, 562.1pt x 421.575pt>
+File: redHistBound.jpg Graphic file (type jpg)
+ <use redHistBound.jpg>
+<greenHistBound.jpg, id=17, 562.1pt x 421.575pt>
+File: greenHistBound.jpg Graphic file (type jpg)
+ <use greenHistBound.jpg>
+<yellowHistBound.jpg, id=18, 562.1pt x 421.575pt>
+File: yellowHistBound.jpg Graphic file (type jpg)
+ <use yellowHistBound.jpg>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<redHistMedian.jpg, id=19, 562.1pt x 421.575pt>
+File: redHistMedian.jpg Graphic file (type jpg)
+ <use redHistMedian.jpg>
+<greenHistMedian.jpg, id=20, 562.1pt x 421.575pt>
+File: greenHistMedian.jpg Graphic file (type jpg)
+ <use greenHistMedian.jpg>
+<yellowHistMedian.jpg, id=21, 562.1pt x 421.575pt>
+File: yellowHistMedian.jpg Graphic file (type jpg)
+ <use yellowHistMedian.jpg>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<redMean.jpg, id=22, 786.94pt x 556.0775pt>
+File: redMean.jpg Graphic file (type jpg)
+ <use redMean.jpg>
+<greenMean.jpg, id=23, 786.94pt x 556.0775pt>
+File: greenMean.jpg Graphic file (type jpg)
+ <use greenMean.jpg>
+<yellowMean.jpg, id=24, 786.94pt x 556.0775pt>
+File: yellowMean.jpg Graphic file (type jpg)
+ <use yellowMean.jpg>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: redMean.jpg Graphic file (type jpg)
+<use redMean.jpg> <redBound.jpg, id=25, 786.94pt x 556.0775pt>
+File: redBound.jpg Graphic file (type jpg)
+
+<use redBound.jpg> <medianRedTrack.jpg, id=26, 786.94pt x 556.0775pt>
+File: medianRedTrack.jpg Graphic file (type jpg)
+
+<use medianRedTrack.jpg>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2 <./errorCroped.jpg> <./redHist.jpg> <./greenHist.jpg> <./yellowHist.jpg>]
+[3 <./redHistBound.jpg> <./greenHistBound.jpg> <./yellowHistBound.jpg> <./redHi
+stMedian.jpg> <./greenHistMedian.jpg> <./yellowHistMedian.jpg> <./redMean.jpg> 
+<./greenMean.jpg> <./yellowMean.jpg> <./redBound.jpg> <./medianRedTrack.jpg>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 55.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 177.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 181.
+
 
 (/usr/share/texmf/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [1
+) [4] [5] (./AVpractical2.aux)
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./AVpractical2.aux) )
- 
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1837 strings out of 256216
- 21391 string characters out of 1917072
- 71014 words of memory out of 1500000
- 5118 multiletter control sequences out of 10000+200000
- 19007 words of font info for 47 fonts, out of 1200000 for 2000
+ 1951 strings out of 256216
+ 23342 string characters out of 1917073
+ 73061 words of memory out of 1500000
+ 5207 multiletter control sequences out of 10000+200000
+ 22332 words of font info for 57 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 27i,6n,24p,518b,197s stack positions out of 5000i,500n,6000p,200000b,15000s
-{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/urw
-/courier/ucrr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/sh
-are/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/ti
-mes/utmri8a.pfb>
-Output written on AVpractical2.pdf (2 pages, 45552 bytes).
+ 27i,8n,24p,1257b,224s stack positions out of 5000i,500n,6000p,200000b,15000s
+{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/u
+rw/courier/ucrr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/
+share/texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/
+times/utmri8a.pfb>
+Output written on AVpractical2.pdf (5 pages, 500174 bytes).
 PDF statistics:
- 26 PDF objects out of 1000 (max. 8388607)
+ 54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
