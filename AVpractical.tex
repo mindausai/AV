@@ -148,7 +148,7 @@ There were three  approaches to calculating the centeroid of the ball, therefore
   \includegraphics[width=3cm]{redHist.jpg}
   \includegraphics[width=3cm]{greenHist.jpg}
   \includegraphics[width=3cm]{yellowHist.jpg}
-\caption{Cleaned images}
+\caption{Histogram of errors using mean approach}
 \end{figure}
 
 \begin{figure}[h!]
@@ -156,7 +156,7 @@ There were three  approaches to calculating the centeroid of the ball, therefore
   \includegraphics[width=3cm]{redHistBound.jpg}
   \includegraphics[width=3cm]{greenHistBound.jpg}
   \includegraphics[width=3cm]{yellowHistBound.jpg}
-\caption{Cleaned images}
+\caption{Histogram of errors using bounding box approach}
 \end{figure}
 
 \begin{figure}[h!]
@@ -164,27 +164,19 @@ There were three  approaches to calculating the centeroid of the ball, therefore
   \includegraphics[width=3cm]{redHistMedian.jpg}
   \includegraphics[width=3cm]{greenHistMedian.jpg}
   \includegraphics[width=3cm]{yellowHistMedian.jpg}
-\caption{Cleaned images}
+\caption{Histogram of errors using median approach}
 \end{figure}
 
 \begin{figure}[h!]
 \centering
-  \includegraphics[width=3cm]{redMean.jpg}
-  \includegraphics[width=3cm]{greenMean.jpg}
-  \includegraphics[width=3cm]{yellowMean.jpg}
-\caption{Cleaned images}
-\end{figure}
-
-\begin{figure}[h!]
-\centering
-  \includegraphics[width=3cm]{redMean.jpg}
-  \includegraphics[width=3cm]{redBound.jpg}
-  \includegraphics[width=3cm]{medianRedTrack.jpg}
+  \includegraphics[width=5cm]{redMean.jpg}
+  \includegraphics[width=5cm]{greenMean.jpg}
+  \includegraphics[width=5cm]{yellowMean.jpg}
 \caption{Cleaned images}
 \end{figure}
 
 \begin{table} [h!]
-\caption{\label{table1} \textit{Mean}}
+\caption{\label{table1} \textit{Mean approach}}
 \vspace{2mm}
 \centerline{
 \begin{tabular}{|c|c|c|c|}
@@ -207,7 +199,7 @@ total error & \multicolumn{3}{|c|}{829.6625} \\
 \end{table}
 
 \begin{table} [h!]
-\caption{\label{table1} \textit{Bound}}
+\caption{\label{table1} \textit{Bound approach}}
 \vspace{2mm}
 \centerline{
 \begin{tabular}{|c|c|c|c|}
@@ -230,7 +222,7 @@ total error & \multicolumn{3}{|c|}{712.3566} \\
 \end{table}
 
 \begin{table} [h!]
-\caption{\label{table1} \textit{Median}}
+\caption{\label{table1} \textit{Median approach}}
 \vspace{2mm}
 \centerline{
 \begin{tabular}{|c|c|c|c|}
@@ -253,32 +245,10 @@ total error & \multicolumn{3}{|c|}{889.8500} \\
 \end{table}
 
 \section{Discussion}
-Qualitative assessment showed 100% detection rate on the training data. There were at most 2 cases of failure - where the centroid deviated from the ground truth above the threshold; Occlusion by the jugglers' fingers is the most likely reason; The fingers occlude half the ball, thus the algorithm segments out only the visible half of the ball and shifts the detected centroid from the ground truth. A potential remedy would be to segment the hands and take the centre of the union of the detected ball and the hand when they are in close proximily. Another approach such as Kalman filtering could be used in conjunction with a motion model to deal with occlusions.
+Qualitative assessment showed 100\% detection rate on the training data. There were at most 2 cases of failure - where the centroid deviated from the ground truth above the threshold; Occlusion by the jugglers' fingers is the most likely reason; The fingers occlude half the ball, thus the algorithm segments out only the visible half of the ball and shifts the detected centroid from the ground truth. A potential remedy would be to segment the hands and take the centre of the union of the detected ball and the hand when they are in close proximily. Another approach such as Kalman filtering could be used in conjunction with a motion model to deal with occlusions.
 
 From statistics we can see that bounding box approach has the smallest total error and has only one image in which the centre deviates above threshold, compared to other approaches, which have have two such cases. Using the centre of the bounding box performs well in cases where the ball can be seen through the grasping fingers, so the left, right, top and bottom edges are visible and an accurate centre can be found; However approach is highly sensitive to outliers as any random point can offset it enourmously.
 
 If we look into individual ball error, we notice that with bounding box approach red ball has the largest error compared with other approaches. This is probably caused by the similarity of the hands and the red ball, which causes misclassifications. That is why in mean and median approach the red balls error is smallest, as the outliers are largely ignored; Because of this we decided not to use the bounding box approach.
-
-\subsection{References}
-
-References should be numbered in order of appearance, 
-for example \cite{ES1}, \cite{ES2}, and \cite{ES3}. 
-You \emph{can} use \texttt{bibtex} to prepare references,
-or do it by hand if there are very few.
-
-%
-\bibliographystyle{IEEEtran}
-\begin{thebibliography}{10}
-\bibitem[1]{ES1} Smith, J. O. and Abel, J. S., 
-``Bark and {ERB} Bilinear Transforms'', 
-IEEE Trans. Speech and Audio Proc., 7(6):697--708, 1999.  
-\bibitem[2]{ES2} Lee, K.-F., Automatic Speech Recognition: 
-The Development of the 
-SPHINX SYSTEM, Kluwer Academic Publishers, Boston, 1989.
-\bibitem[3]{ES3} Rudnicky, A. I., Polifroni, Thayer, E. H.,
- and Brennan, R. A.  
-"Interactive problem solving with speech", J. Acoust. Soc. Amer., 
-Vol. 84, 1988, p S213(A).
-\end{thebibliography}
 
 \end{document}
