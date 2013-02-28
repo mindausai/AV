@@ -5,7 +5,6 @@ average = double(imread('average.jpg'));
 
 files = dir('images/0*.jpg');
 
-% trains clasifier for ball colors
 vals = get_training_data();
 valshsv = rgb2hsv(rgb2nrgb(vals));
 
@@ -17,13 +16,12 @@ matrix = [];
 for ii = 1:size(files,1)
     
     % initialisation of vector, which would be added to final output matrix
-    % Final form: [i,rr,rc,gr,gc,yr,yc]
     column = ii;
     
     im = double(imread(files(ii).name));
-    
-    % applies all the mask to the image
     out = detect1(im,bg,average);
+    
+    tmpChann = zeros(480,640);
     
     for ball = 1:3
         out2 = out;
@@ -32,8 +30,7 @@ for ii = 1:size(files,1)
 
         lower = m-sd*2;
         upper = m+sd*2;
-        
-        % tresholding the image by the ball color using values gotten from clasifier
+
         out2(out2 < lower| out2 > upper) = 0;
         out2(out2 >= lower & out2 <= upper) = 1.0;
 
@@ -62,18 +59,50 @@ for ii = 1:size(files,1)
                 % find centre of maximum area
                 x = stats(reg).PixelList(:,1);
                 y = stats(reg).PixelList(:,2);
+                
+                %centreX1 = mean(x);
+                %centreY1 = mean(y);
+                %centreX2 = mean([max(x),min(x)]);
+                %centreY2 = mean([max(y),min(y)]);
+                %centreX = mean([centreX1,centreX2]);
+                %centreY = mean([centreY1,centreY2]);
                 centreX = median(x);
                 centreY = median(y);
                 
                 column = [column centreY centreX];
             end
         end
+        tmpChann = tmpChann + channel;
+        if ball == 1
+            redChan = channel;
+        end
+        if ball == 2
+            greenChan = channel;
+        end
+        if ball == 3
+            yellowChan = channel;
+        end
     end
+    figure(1)
+    imshow(tmpChann)
+    ii
     
     % output matrix
-    % Final form: [[i,rr,rc,gr,gc,yr,yc]'...] one column for eahc image
     matrix = [matrix, column'];
     
+    figure(2)
+    imshow(redChan)
+    
+    figure(3)
+    imshow(greenChan)
+    
+    figure(4)
+    hold on
+    imshow(yellowChan)
+    plot(gt1(7,ii),gt1(6,ii),'r+');
+    plot(centreX,centreY,'.r');
+    drawnow
+    yellow = sqrt((gt1(7,ii)-centreX)^2 + (gt1(6,ii) - centreY)^2)
 end
 
 save('matrix.mat','matrix');

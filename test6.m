@@ -5,6 +5,8 @@ files = dir('images/0*.jpg');
 
 figure(1);
 for ii = 1:size(files,1)
+    
+    % plot found centre and ground truth in each image
     Image = imread(files(ii).name);
     imshow(Image);
     hold on;
@@ -21,18 +23,21 @@ end
 
 bg = imread('background.jpg');
 
+% red ball trajectory
 figure(2); 
 imshow(bg);
 hold on;
 plot(matrix(3,:),matrix(2,:),'-r','LineWidth',2);
 drawnow;
 
+% green ball trajectory
 figure(3); 
 imshow(bg);
 hold on;
 plot(matrix(5,:),matrix(4,:),'-g','LineWidth',2); 
 drawnow;
 
+% yellow ball trajectory
 figure(4); 
 imshow(bg);
 hold on;
