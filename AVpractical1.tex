@@ -113,125 +113,41 @@ Threshold values for hue were obtained from a training sample. The training samp
 \caption{Training sample for each ball}
 \end{figure}
 
+\subsection{Clean up}
 
-\section{Discussion and Conclusion}
+\begin{figure}[h!]
+\centering
+  \includegraphics[width=5cm]{cleanedYell.jpg}
+  \includegraphics[width=5cm]{cleanGreen.jpg}
+  \includegraphics[width=5cm]{cleanRed.jpg}
+  \includegraphics[width=5cm]{cleanAll.jpg}
+\caption{Cleaned images}
+\end{figure}
 
-\subsection{Formatting: tables}
+Final clean up and ball identification was made using matlab \textbf{bwlabel} and \textbf{regionprops} functions. The function \textbf{bwlabel} takes our intermediate file, which we got after applying all the masks, and labels all the connected objects in the file. Later, this file is supplied to \textbf{regionprops} function, which measures and returns set of the properties for each connected object in the file. We only needed three properties:
 
-An example of a table is shown as Table \ref{table1}. Somewhat 
-different styles are allowed according to the type and purpose of the 
-table. 
+\begin{enumerate}
+\item \emph{Area} - number of actual pixels in the region,
+\item \emph{PixelIdxList} - vector containing the linear indices of the pixels in region,
+\item \emph{PixelList} - matrix specifying the locations of pixels in the region.
+\end{enumerate}
 
-\begin{table} [t,h]
-\caption{\label{table1} \textit{This is an example of a table.}}
-\vspace{2mm}
-\centerline{
-\begin{tabular}{|c|c|}
-\hline
-ratio & decibels \\
-\hline  \hline
-1/1 & 0 \\
-2/1 & $\approx 6$ \\
-3.16 & 10 \\
-10/1 & 20 \\ 
-1/10 & -20 \\
-100/1 & 40 \\
-1000/1 & 60 \\
-\hline
-\end{tabular}}
-\end{table}
+The idea was: 
+\begin{enumerate}
+\item to find maximum connected object in the file by the pixels area, 
+\item set all other connected object areas pixel to 0 (delete these areas), 
+\item find the middle point of the largest connected objects area. 
+\end{enumerate}
 
-To include text without formatting, use this
-(scriptsize uses a significantly smaller font,
-intermediate sizes are footnotesize and small):
-{\scriptsize
-\begin{verbatim}
-I\O     1     2     3     4     5     6     7     8     9    10
-  1  71.2   8.8   1.2   0.0   2.5   3.8   7.5   0.0   5.0   0.0
-  2   0.0  87.5   1.2   0.0   2.5   2.5   0.0   5.0   0.0   1.2
-  3   0.0   0.0  67.5   5.0   1.2  11.2   3.8   7.5   3.8   0.0
-  4   0.0   0.0   1.2  62.5   3.8  22.5   0.0   6.2   2.5   1.2
-  5   0.0   2.5   0.0   0.0  76.2   0.0   1.2   6.2   0.0  13.8
-  6   5.0   1.2   6.2  21.2   5.0  47.5   1.2   5.0   1.2   6.2
-  7  17.5   6.2   3.8   0.0   5.0   0.0  57.5   0.0  10.0   0.0
-  8   0.0   0.0   2.5   1.2   8.8   0.0   0.0  73.8   2.5  11.2
-  9  11.2   0.0   2.5   8.8   2.5   3.8   5.0   2.5  61.3   2.5
- 10   1.2   0.0   0.0   2.5  20.0   0.0   0.0  12.5   0.0  63.7
-\end{verbatim}
-}
+Second point cleaned the image of all the noise, because the object with biggest area was the ball itself. Third point was needed for evaluation, to evaluate how much our detected ball differs from ground truth. We had four different approaches how to calculate the mass of the ball:
 
-If you want to use both columns, put it in a figure*:
-(figure* uses both columns, figure just 1):
-it is likely to float away to an unexpecte place, though.
-\begin{figure*}[h]
-  \centering
-{\small
-\begin{verbatim}
-I\O     1     2     3     4     5     6     7     8     9    10
-  1  71.2   8.8   1.2   0.0   2.5   3.8   7.5   0.0   5.0   0.0
-  2   0.0  87.5   1.2   0.0   2.5   2.5   0.0   5.0   0.0   1.2
-  3   0.0   0.0  67.5   5.0   1.2  11.2   3.8   7.5   3.8   0.0
-  4   0.0   0.0   1.2  62.5   3.8  22.5   0.0   6.2   2.5   1.2
-  5   0.0   2.5   0.0   0.0  76.2   0.0   1.2   6.2   0.0  13.8
-  6   5.0   1.2   6.2  21.2   5.0  47.5   1.2   5.0   1.2   6.2
-  7  17.5   6.2   3.8   0.0   5.0   0.0  57.5   0.0  10.0   0.0
-  8   0.0   0.0   2.5   1.2   8.8   0.0   0.0  73.8   2.5  11.2
-  9  11.2   0.0   2.5   8.8   2.5   3.8   5.0   2.5  61.3   2.5
- 10   1.2   0.0   0.0   2.5  20.0   0.0   0.0  12.5   0.0  63.7
-\end{verbatim}
-}
+\begin{enumerate}
+\item Use the mean of the area pixels,
+\item use the median of the area pixels,
+\item use the maximum and minimum pixels in \textbf{y} and \textbf{x} coordinates and find the mean between them. This creates a bounding box of the area and finds it centre.
+\end{enumerate}
 
-  \caption{Confusion Matrix}
-  
-\end{figure*}
+The evaluation of these approaches are reported in the section below. We decided to use just normal mean, but left an option to change if needed and found that other approaches with different data sets works better. We stored all found centres in the matrix. The format of that matrix is exactly the same as the format for the ground truth. In next stage we just plot the found mass centres on each image with the centre from ground truth and draw the trajectory at the end by connecting all the points.
 
-\subsection{Maths, if needed}
 
-%
-%\vspace{-3mm}
-\begin{equation}
-x(t) = s(f_\omega(t))
-\label{eq1}
-\end{equation}
-where \(f_\omega(t)\) is a special warping function
-\begin{equation}
-f_\omega(t)=\frac{1}{2\pi j}\oint_C \frac{\nu^{-1k}d\nu}
-{(1-\beta\nu^{-1})(\nu^{-1}-\beta)}
-\label{eq2}
-\end{equation}
-A residue theorem states that
-\begin{equation}
-\oint_C F(z)dz=2 \pi j \sum_k Res[F(z),p_k]
-\label{eq3}
-\end{equation}
-Applying (\ref{eq3}) to (\ref{eq1}), 
-it is straightforward to see that
-\begin{equation}
-1 + 1 = \pi
-\label{eq4}
-\end{equation}
-
-And here is an included image (png and pdf formats are allowed).
-
-\subsection{References}
-
-References should be numbered in order of appearance, 
-for example \cite{ES1}, \cite{ES2}, and \cite{ES3}. 
-You \emph{can} use \texttt{bibtex} to prepare references,
-or do it by hand if there are very few.
-
-%
-\bibliographystyle{IEEEtran}
-\begin{thebibliography}{10}
-\bibitem[1]{ES1} Smith, J. O. and Abel, J. S., 
-``Bark and {ERB} Bilinear Transforms'', 
-IEEE Trans. Speech and Audio Proc., 7(6):697--708, 1999.  
-\bibitem[2]{ES2} Lee, K.-F., Automatic Speech Recognition: 
-The Development of the 
-SPHINX SYSTEM, Kluwer Academic Publishers, Boston, 1989.
-\bibitem[3]{ES3} Rudnicky, A. I., Polifroni, Thayer, E. H.,
- and Brennan, R. A.  
-"Interactive problem solving with speech", J. Acoust. Soc. Amer., 
-Vol. 84, 1988, p S213(A).
-\end{thebibliography}
 \end{document}

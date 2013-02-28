@@ -1,20 +1,22 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2013.1.3)  28 FEB 2013 01:32
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.2.26)  28 FEB 2013 11:01
 entering extended mode
- %&-line parsing enabled.
-**AVpractical1.tex
-(./AVpractical1.tex
-LaTeX2e <2005/12/01>
-Babel <v3.8h> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, arabic, basque, bulgarian, coptic, welsh, czech, slovak, german, ng
-erman, danish, esperanto, spanish, catalan, galician, estonian, farsi, finnish,
- french, greek, monogreek, ancientgreek, croatian, hungarian, interlingua, ibyc
-us, indonesian, icelandic, italian, latin, mongolian, dutch, norsk, polish, por
-tuguese, pinyin, romanian, russian, slovenian, uppersorbian, serbian, swedish, 
-turkish, ukenglish, ukrainian, loaded.
-(/usr/share/texmf/tex/latex/base/article.cls
-Document Class: article 2005/09/16 v1.4f Standard LaTeX document class
-(/usr/share/texmf/tex/latex/base/size10.clo
-File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
+**C:/Users/Marat/Documents/GitHub/AV/AVpractical1.tex
+(C:/Users/Marat/Documents/GitHub/AV/AVpractical1.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
+ lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
+german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
+an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
+ishmax, welsh, loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -28,35 +30,35 @@ File: size10.clo 2005/09/16 v1.4f Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
-Package: amssymb 2002/01/22 v2.2d
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
 
-(/usr/share/texmf/tex/latex/amsfonts/amsfonts.sty
-Package: amsfonts 2001/10/25 v2.2f
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \@emptytoks=\toks14
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 132.
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
 ))
-(/usr/share/texmf/tex/latex/amsmath/amsmath.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texmf/tex/latex/amsmath/amstext.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texmf/tex/latex/amsmath/amsgen.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks15
 \ex@=\dimen103
 ))
-(/usr/share/texmf/tex/latex/amsmath/amsbsy.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen104
 )
-(/usr/share/texmf/tex/latex/amsmath/amsopn.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count87
@@ -97,41 +99,46 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/share/texmf/tex/latex/graphics/graphicx.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/keyval.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks20
 )
-(/usr/share/texmf/tex/latex/graphics/graphics.sty
-Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texmf/tex/latex/graphics/trig.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texmf/tex/latex/config/graphics.cfg
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 90.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
 \Gread@gobject=\count99
 ))
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(/usr/share/texmf/tex/latex/psnfss/times.sty
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\times.sty"
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
 
 LaTeX Warning: Unused global option(s):
     [oneclumn].
 
-(./AVpractical1.aux)
-\openout1 = `AVpractical1.aux'.
-
+(C:\Users\Marat\Documents\GitHub\AV\AVpractical1.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
@@ -145,29 +152,32 @@ LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
 LaTeX Font Info:    ... okay on input line 15.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 15.
- (/usr/share/texmf/tex/latex/psnfss/ot1ptm.fd
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-(/usr/share/texmf/tex/context/base/supp-pdf.tex
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count100
 \scratchdimen=\dimen114
 \scratchbox=\box28
 \nofMPsegments=\count101
 \nofMParguments=\count102
+\everyMPshowfont=\toks21
 \MPscratchCnt=\count103
 \MPscratchDim=\dimen115
 \MPnumerator=\count104
-\everyMPtoPDFconversion=\toks21
+\makeMPintoPDFobject=\count105
+\everyMPtoPDFconversion=\toks22
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 17.
- (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2002/01/19 v2.2g AMS font definitions
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 
-(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2002/01/19 v2.2g AMS font definitions
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
@@ -175,95 +185,171 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 <figures/imnrgb.png, id=1, 482.55281pt x 361.35pt>
 File: figures/imnrgb.png Graphic file (type png)
  <use figures/imnrgb.png>
+Package pdftex.def Info: figures/imnrgb.png used on input line 50.
+(pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
+
 <figures/original.png, id=2, 482.55281pt x 361.35pt>
 File: figures/original.png Graphic file (type png)
 
 <use figures/original.png>
+Package pdftex.def Info: figures/original.png used on input line 51.
+(pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 55.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] <figures/av.png, id=9, 482
-.55281pt x 361.35pt>
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] <figures/av.png, id=9, 48
+2.55281pt x 361.35pt>
 File: figures/av.png Graphic file (type png)
  <use figures/av.png>
+Package pdftex.def Info: figures/av.png used on input line 66.
+(pdftex.def)             Requested size: 85.35826pt x 63.91539pt.
+
 <figures/avnrgb.png, id=10, 482.55281pt x 361.35pt>
 File: figures/avnrgb.png Graphic file (type png)
  <use figures/avnrgb.png>
+Package pdftex.def Info: figures/avnrgb.png used on input line 67.
+(pdftex.def)             Requested size: 85.35826pt x 63.91539pt.
+
 <figures/avnrgbdif.png, id=11, 482.55281pt x 361.35pt>
 File: figures/avnrgbdif.png Graphic file (type png)
 
 <use figures/avnrgbdif.png>
+Package pdftex.def Info: figures/avnrgbdif.png used on input line 68.
+(pdftex.def)             Requested size: 85.35826pt x 63.91539pt.
+
 <figures/avnrgbhsvvalue.png, id=12, 482.55281pt x 361.35pt>
 File: figures/avnrgbhsvvalue.png Graphic file (type png)
 
 <use figures/avnrgbhsvvalue.png>
+Package pdftex.def Info: figures/avnrgbhsvvalue.png used on input line 69.
+(pdftex.def)             Requested size: 85.35826pt x 63.91539pt.
+
 <figures/avnrgbdifhsvmask.png, id=13, 482.55281pt x 361.35pt>
 File: figures/avnrgbdifhsvmask.png Graphic file (type png)
 
 <use figures/avnrgbdifhsvmask.png>
+Package pdftex.def Info: figures/avnrgbdifhsvmask.png used on input line 70.
+(pdftex.def)             Requested size: 85.35826pt x 63.91539pt.
 File: figures/imnrgb.png Graphic file (type png)
  <use figures/imnrgb.png>
+Package pdftex.def Info: figures/imnrgb.png used on input line 80.
+(pdftex.def)             Requested size: 85.35826pt x 63.91539pt.
+
 <figures/clothes_mask.png, id=14, 482.55281pt x 361.35pt>
 File: figures/clothes_mask.png Graphic file (type png)
 
-<use figures/clothes_mask.png> [2 <./figures/imnrgb.png (PNG copy)> <./figures/
-original.png (PNG copy)> <./figures/av.png (PNG copy)> <./figures/avnrgb.png (P
-NG copy)> <./figures/avnrgbdif.png (PNG copy)> <./figures/avnrgbhsvvalue.png (P
-NG copy)> <./figures/avnrgbdifhsvmask.png (PNG copy)>]
+<use figures/clothes_mask.png>
+Package pdftex.def Info: figures/clothes_mask.png used on input line 81.
+(pdftex.def)             Requested size: 85.35826pt x 63.91539pt.
+ [2 <C:/Users/Marat/Documents/GitHub/AV/figures/imnrgb.png (PNG copy)> <C:/User
+s/Marat/Documents/GitHub/AV/figures/original.png (PNG copy)> <C:/Users/Marat/Do
+cuments/GitHub/AV/figures/av.png (PNG copy)> <C:/Users/Marat/Documents/GitHub/A
+V/figures/avnrgb.png (PNG copy)> <C:/Users/Marat/Documents/GitHub/AV/figures/av
+nrgbdif.png (PNG copy)> <C:/Users/Marat/Documents/GitHub/AV/figures/avnrgbhsvva
+lue.png (PNG copy)> <C:/Users/Marat/Documents/GitHub/AV/figures/avnrgbdifhsvmas
+k.png (PNG copy)>]
 <figures/imsat.png, id=18, 482.55281pt x 361.35pt>
 File: figures/imsat.png Graphic file (type png)
  <use figures/imsat.png>
+Package pdftex.def Info: figures/imsat.png used on input line 90.
+(pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
+
 <figures/imhsvsatmask.png, id=19, 482.55281pt x 361.35pt>
 File: figures/imhsvsatmask.png Graphic file (type png)
 
 <use figures/imhsvsatmask.png>
+Package pdftex.def Info: figures/imhsvsatmask.png used on input line 91.
+(pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
+
 <figures/bgremoved.png, id=20, 482.55281pt x 361.35pt>
 File: figures/bgremoved.png Graphic file (type png)
 
 <use figures/bgremoved.png>
+Package pdftex.def Info: figures/bgremoved.png used on input line 101.
+(pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
+
 <figures/training.png, id=21, 351.56343pt x 259.7203pt>
 File: figures/training.png Graphic file (type png)
 
-<use figures/training.png> <figures/class1.png, id=22, 482.55281pt x 361.35pt>
+<use figures/training.png>
+Package pdftex.def Info: figures/training.png used on input line 109.
+(pdftex.def)             Requested size: 170.71652pt x 126.11478pt.
+ <figures/class1.png, id=22, 482.55281pt x 361.35pt>
 File: figures/class1.png Graphic file (type png)
 
-<use figures/class1.png> <figures/class2.png, id=23, 482.55281pt x 361.35pt>
+<use figures/class1.png>
+Package pdftex.def Info: figures/class1.png used on input line 110.
+(pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
+ <figures/class2.png, id=23, 482.55281pt x 361.35pt>
 File: figures/class2.png Graphic file (type png)
 
-<use figures/class2.png> <figures/class3.png, id=24, 482.55281pt x 361.35pt>
+<use figures/class2.png>
+Package pdftex.def Info: figures/class2.png used on input line 111.
+(pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
+ <figures/class3.png, id=24, 482.55281pt x 361.35pt>
 File: figures/class3.png Graphic file (type png)
 
-<use figures/class3.png> [3 <./figures/clothes_mask.png (PNG copy)> <./figures/
-imsat.png (PNG copy)> <./figures/imhsvsatmask.png (PNG copy)>] [4 <./figures/bg
-removed.png (PNG copy)> <./figures/training.png (PNG copy)> <./figures/class1.p
-ng (PNG copy)> <./figures/class2.png (PNG copy)> <./figures/class3.png (PNG cop
-y)>]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 148.
+<use figures/class3.png>
+Package pdftex.def Info: figures/class3.png used on input line 112.
+(pdftex.def)             Requested size: 170.71652pt x 127.83629pt.
+ <cleanedYell.jpg, id=25, 786.94pt x 556.0775pt>
+File: cleanedYell.jpg Graphic file (type jpg)
 
- (/usr/share/texmf/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-) [5] [6] (./AVpractical1.aux) ) 
+<use cleanedYell.jpg>
+Package pdftex.def Info: cleanedYell.jpg used on input line 120.
+(pdftex.def)             Requested size: 142.26378pt x 100.52237pt.
+ <cleanGreen.jpg, id=26, 786.94pt x 556.0775pt>
+File: cleanGreen.jpg Graphic file (type jpg)
+
+<use cleanGreen.jpg>
+Package pdftex.def Info: cleanGreen.jpg used on input line 121.
+(pdftex.def)             Requested size: 142.26378pt x 100.52237pt.
+ <cleanRed.jpg, id=27, 786.94pt x 556.0775pt>
+File: cleanRed.jpg Graphic file (type jpg)
+
+<use cleanRed.jpg>
+Package pdftex.def Info: cleanRed.jpg used on input line 122.
+(pdftex.def)             Requested size: 142.26378pt x 100.52237pt.
+ <cleanAll.jpg, id=28, 786.94pt x 556.0775pt>
+File: cleanAll.jpg Graphic file (type jpg)
+
+<use cleanAll.jpg>
+Package pdftex.def Info: cleanAll.jpg used on input line 123.
+(pdftex.def)             Requested size: 142.26378pt x 100.52237pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 127.
+[3 <C:/Users/Marat/Documents/GitHub/AV/figures/clothes_mask.png (PNG copy)> <C:
+/Users/Marat/Documents/GitHub/AV/figures/imsat.png (PNG copy)> <C:/Users/Marat/
+Documents/GitHub/AV/figures/imhsvsatmask.png (PNG copy)>] [4 <C:/Users/Marat/Do
+cuments/GitHub/AV/figures/bgremoved.png (PNG copy)> <C:/Users/Marat/Documents/G
+itHub/AV/figures/training.png> <C:/Users/Marat/Documents/GitHub/AV/figures/clas
+s1.png (PNG copy)> <C:/Users/Marat/Documents/GitHub/AV/figures/class2.png (PNG 
+copy)> <C:/Users/Marat/Documents/GitHub/AV/figures/class3.png (PNG copy)>]
+[5 <C:/Users/Marat/Documents/GitHub/AV/cleanedYell.jpg> <C:/Users/Marat/Documen
+ts/GitHub/AV/cleanGreen.jpg> <C:/Users/Marat/Documents/GitHub/AV/cleanRed.jpg> 
+<C:/Users/Marat/Documents/GitHub/AV/cleanAll.jpg>]
+(C:\Users\Marat\Documents\GitHub\AV\AVpractical1.aux) ) 
 Here is how much of TeX's memory you used:
- 1939 strings out of 256216
- 23313 string characters out of 1917073
- 74054 words of memory out of 1500000
- 5197 multiletter control sequences out of 10000+200000
- 22750 words of font info for 61 fonts, out of 1200000 for 2000
- 645 hyphenation exceptions out of 8191
- 27i,8n,24p,541b,261s stack positions out of 5000i,500n,6000p,200000b,15000s
-{/usr/share/texmf/fonts/enc/dvips/base/8r.enc}<
-/usr/share/texmf/fonts/type1/bluesky/cm/cmex10.pfb></usr/share/texmf/fonts/type
-1/bluesky/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmmi7.pfb></us
-r/share/texmf/fonts/type1/bluesky/cm/cmr10.pfb></usr/share/texmf/fonts/type1/bl
-uesky/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/sha
-re/texmf/fonts/type1/bluesky/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/urw/cou
-rier/ucrr8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmb8a.pfb></usr/share/
-texmf/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf/fonts/type1/urw/times/
-utmri8a.pfb>
-Output written on AVpractical1.pdf (6 pages, 1752378 bytes).
+ 2156 strings out of 493921
+ 27663 string characters out of 3144876
+ 78060 words of memory out of 3000000
+ 5422 multiletter control sequences out of 15000+200000
+ 20109 words of font info for 47 fonts, out of 3000000 for 9000
+ 841 hyphenation exceptions out of 8191
+ 27i,6n,24p,577b,224s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/
+MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on AVpractical1.pdf (5 pages, 1757220 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 131072)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
